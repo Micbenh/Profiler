@@ -35,13 +35,6 @@ class Facebooksignup:
         driver.find_element_by_name('websubmit').click()
         time.sleep(60)
 
-
-
-
-
-
-
-
 if __name__ == "__main__":
     test = Facebooksignup("Daniel","Ben-Shalom", "micbenh@outlook.com", str(1125125)+"asfaf2325!@")
     test.sign_up()

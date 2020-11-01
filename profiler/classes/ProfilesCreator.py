@@ -9,7 +9,7 @@ class Facebooksignup:
         pass
 
     def sign_up(self):
-        webdriver_path = r"C:\Users\t-mibenh\Downloads\chromedriver_win32\chromedriver.exe"
+        webdriver_path = r""
         driver = webdriver.Chrome(webdriver_path)
         driver.get("https://www.facebook.com/r.php")
 
@@ -65,7 +65,7 @@ class Twittersignup():
         driver.find_element_by_xpath(r"//*[@id='layers']/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div[4]/span").click()
         time.sleep(0.5)
         email = Email(user.Fname + " " + user.Lname, user.Username)
-        email.temp_mail()
+        email.fast_mail_sign_up
         driver.find_element_by_name("email").send_keys(email.email)
         time.sleep(0.5)
         driver.find_element_by_xpath(r"//*[@id='layers']/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div[5]/div[3]/div/div[1]/div[2]/select").send_keys(user.Birthday.split(" ")[0])
